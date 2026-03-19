@@ -17,5 +17,8 @@ dependencies = ["mcp>=1.0.0", "httpx>=0.27.0", "pydantic>=2.0.0"]
 Homepage = "https://github.com/AiAgentKarl/cybersecurity-mcp-server"
 Repository = "https://github.com/AiAgentKarl/cybersecurity-mcp-server"
 
+[project.scripts]
+cybersecurity-server = "src.server:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
